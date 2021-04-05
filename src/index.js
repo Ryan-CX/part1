@@ -28,7 +28,7 @@ const Winner = ({ anecdotes, allVotes }) => {
 
 const Button = ({ onClick, text }) => <button onClick={onClick}>{text}</button>;
 
-const App = ({ anecdotes }) => {
+const App = () => {
 	const [selected, setSelected] = useState(0);
 	const [allVotes, setAllVotes] = useState(Array(6).fill(0));
 
@@ -65,4 +65,4 @@ const anecdotes = [
 	'Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.',
 ];
 
-ReactDOM.render(<App anecdotes={anecdotes} />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
