@@ -66,3 +66,4 @@ const anecdotes = [
 ];
 
 ReactDOM.render(<App />, document.getElementById('root'));
+//part1 finished.
